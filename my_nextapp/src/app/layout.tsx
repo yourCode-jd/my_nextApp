@@ -1,9 +1,12 @@
 import Header from '@/components/Header'
-import './globals.css'
-import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
+import { Montserrat } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Montserrat({
+  subsets: ['latin'],
+  // variable: '--Montserrat'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,12 +18,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={font.className}>
+        <main>
+          <Header />
+
+          {children}
+
+          <Footer />
+        </main>
 
       </body>
     </html>
