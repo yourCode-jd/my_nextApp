@@ -15,4 +15,16 @@
   .padding-container {
     @apply px-5;
   }
+
+  .whiteBtn {
+    @apply bg-white text-black;
+  }
+
+  .heroBackground {
+    @apply heroBg;
+  }
+
+  .heroBg {
+    background-image: url(/collection.jpg);
+  }
 }

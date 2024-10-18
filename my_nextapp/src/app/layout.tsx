@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <main>
+        <main className='relative overflow-hidden'>
           <Header />
 
           {children}
